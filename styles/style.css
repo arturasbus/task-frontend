@@ -1,0 +1,400 @@
+body,
+html {
+  font-family: "H", "Trebuchet MS", Helvetica !important;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: url(/assets/background.jpg);
+  -webkit-backdrop-filter: brightness(0.7);
+          backdrop-filter: brightness(0.7);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  height: 100%;
+  padding: 0 !important;
+}
+
+.navbar {
+  padding: 2rem !important;
+}
+
+.navbar .nav-item:nth-child(2) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-top: -25px !important;
+}
+
+.navbar .nav-item:nth-child(2) span {
+  color: yellow;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.navbar a {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 0;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  height: 80%;
+  color: #fff;
+}
+
+.main .left p {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.main .left p span {
+  color: #ff4546;
+}
+
+.main .left .counter {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[6];
+      grid-template-columns: repeat(6, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: left;
+}
+
+.main .left .counter i {
+  color: #ff4546;
+  font-size: 2rem;
+}
+
+.main .left .counter p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.main .left .counter span {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 1rem;
+}
+
+.main .left .counter .count {
+  margin: 0;
+}
+
+.main .left .btn-danger {
+  text-transform: uppercase;
+}
+
+.main .left .btn-xl {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.main .right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr 1fr)[1fr];
+      grid-template-columns: repeat(1fr 1fr 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "h h h" "d o f" "d o m";
+}
+
+.main .right .rightInfo1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: h;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-color: #ff7678;
+  color: #fff;
+  padding: 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 3.5rem;
+  width: 11rem;
+}
+
+.main .right .rightInfo1 p {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+}
+
+.main .right .rightInfo1 .arrow {
+  background: #ff7678;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: -17px auto;
+}
+
+.main .right .rightInfo2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: d;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  font-size: 8rem;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.main .right .rightInfo3 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: o;
+}
+
+.main .right .rightInfo3 p {
+  font-size: 30rem;
+  font-weight: 700;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  margin-top: -10rem;
+}
+
+.main .right .rightInfo4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: f;
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.main .right .rightInfo5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: m;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  font-size: 6rem;
+  font-weight: 700;
+  margin-top: -5rem;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  color: #fff;
+  height: 50px;
+  margin-top: 8rem;
+}
+
+.footer p {
+  font-weight: 100 !important;
+}
+
+.footer i {
+  color: #4a7e4a;
+  margin: 0.4rem;
+}
+
+@media screen and (max-width: 980px) {
+  .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar a {
+    font-size: 0.74rem;
+  }
+  .navbar-brand img {
+    height: 1.4rem;
+  }
+  .footer {
+    height: 4rem !important;
+    margin-top: 5rem !important;
+  }
+  .footer p {
+    font-weight: 100 !important;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar a {
+    padding: 8px;
+  }
+  .main .left p {
+    font-size: 2rem;
+  }
+  .main .left .btn-xl {
+    padding: 0.8rem 2rem !important;
+    font-size: 1rem;
+  }
+  .main .right .rightInfo1 {
+    font-size: 1rem;
+    font-weight: 600;
+    height: 3rem;
+    width: 9rem;
+  }
+  .main .right .rightInfo1 p {
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+  }
+  .main .right .rightInfo1 .arrow {
+    width: 1rem;
+    height: 1rem;
+    margin: -17px auto;
+  }
+  .main .right .rightInfo2 {
+    font-size: 5rem;
+    margin-top: 50px;
+  }
+  .main .right .rightInfo3 p {
+    font-size: 20rem;
+    margin-top: -7rem;
+  }
+  .main .right .rightInfo4 {
+    font-size: 4rem;
+  }
+  .main .right .rightInfo5 {
+    font-size: 4rem;
+    margin-top: -3rem;
+  }
+  .footer {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    -ms-grid-rows: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+    margin-top: 0rem !important;
+  }
+  .footer p {
+    font-weight: 100 !important;
+    font-size: 0.7rem;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 90% !important;
+    padding: 0 !important;
+  }
+  .main .left p {
+    font-size: 1rem;
+  }
+  .main .counter i {
+    font-size: 1.5rem !important;
+  }
+  .main .counter p {
+    font-size: 0.7rem !important;
+  }
+  .main .counter span {
+    font-size: 1.2rem !important;
+    margin: 0 1rem;
+  }
+  .main .btn-xl {
+    padding: 0.7rem 2rem !important;
+    font-size: 0.8rem !important;
+    margin-top: 1rem !important;
+  }
+  .right .rightInfo1 {
+    height: 1.5rem !important;
+    width: 5rem !important;
+    margin-top: 2rem !important;
+    -ms-flex-item-align: center !important;
+        -ms-grid-row-align: center !important;
+        align-self: center !important;
+  }
+  .right .rightInfo1 p {
+    font-size: 0.5rem !important;
+    margin-top: 0rem !important;
+  }
+  .right .rightInfo1 .arrow {
+    width: 0.8rem !important;
+    height: 0.8rem !important;
+    margin: -17px auto;
+  }
+  .right .rightInfo2 {
+    font-size: 3rem !important;
+    font-weight: 700;
+    margin-top: 0rem !important;
+  }
+  .right .rightInfo3 p {
+    font-size: 12rem !important;
+    margin-top: -5rem !important;
+  }
+  .right .rightInfo4 {
+    font-size: 2rem !important;
+  }
+  .right .rightInfo5 {
+    font-size: 2rem !important;
+    margin-top: -2rem !important;
+  }
+  .footer {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    -ms-grid-rows: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+    margin-top: 0 !important;
+  }
+  .footer p {
+    font-weight: 100 !important;
+    font-size: 0.6rem !important;
+    margin: 0 !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
